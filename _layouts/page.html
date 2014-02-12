@@ -1,0 +1,24 @@
+---
+---
+<!doctype html>
+<html class="no-js" lang="en">
+{% comment %}
+https://github.com/h5bp/html5-boilerplate/blob/v4.3.0/doc/html.md
+http://www.paulirish.com/2009/avoiding-the-fouc-v3/
+{% endcomment %}
+
+<head>
+<meta charset="utf-8">
+<title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</title>
+<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+{% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% comment %}For IE: Need to set the html to use either html5shiv (or Modernizr) to use HTML5
+sectioning elements (section, article, aside, nav, etc) so they're recognized and stylable.
+Also need to use CSS to set those elements to display.block.
+{% endcomment %}
+</head>
+
+{% include template1.html %}
