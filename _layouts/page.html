@@ -8,16 +8,19 @@ http://www.paulirish.com/2009/avoiding-the-fouc-v3/
 {% endcomment %}
 
 <head>
-<meta charset="utf-8">
-<title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</title>
-<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-{% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="canonical" href="http://webdz.co/">
+  <!-- <link rel="alternate" type="application/atom+xml" title="My feed" href=""> -->
+  <!-- <link rel="shortcut icon" href=""> -->
 
 {% comment %}For IE: Need to set the html to use either html5shiv (or Modernizr) to use HTML5
 sectioning elements (section, article, aside, nav, etc) so they're recognized and stylable.
-Also need to use CSS to set those elements to display.block.
+Also need to use CSS to set those elements to display:block (Normalize does this)
 {% endcomment %}
 </head>
 

@@ -2,3 +2,5 @@ title:          Web /dɪˈzaɪn/ | webdz.co
 description:    Web Design and Development Tidbits
 
 markdown:   kramdown
+
+exclude: [sass]
